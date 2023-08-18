@@ -14,17 +14,17 @@ const Navbar = ({ logout, isAuthenticated }) => {
     const guestLinks = () => (
         <Fragment>
             <li >
-                <Link to='/login'>Login</Link>
+                <Link to='/login' className='underline'>Login</Link>
             </li>
             <li>
-                <Link to='/signup'>Sign Up</Link>
+                <Link to='/signup' className='underline'>Sign Up</Link>
             </li>
         </Fragment>
     );
 
     const authLinks = () => (
         <li>
-            <a className='nav-link' href='#!' onClick={logout_user}>Logout</a>
+            <a className='underline' href='#!' onClick={logout_user}>Logout</a>
         </li>
     );
 

@@ -5,8 +5,8 @@ const Home = ({ isAuthenticated, user }) => (
     <div className='container'>
         {isAuthenticated && user ? (
             
-            <div>Welcome,{user.id}: {user.email}!
-             <p>Ohayo, {user.first_name} {user.last_name}</p>
+            <div className='text-2xl font-extrabold'>Welcome,{user.id}: {user.email}!
+             <p className='text-1xl font-semibold'>Ohayo, {user.first_name} {user.last_name}</p>
              </div>
            
         ) : (
