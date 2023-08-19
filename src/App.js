@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter here
 import Home from './containers/Home';
 import Login from './containers/Login';
 import Signup from './containers/Signup';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <Router basename="/React-Authentication-Frontend"> {/* Use HashRouter */}
+        <Router> {/* Use HashRouter */}
           <Layout />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
             <Route path='/password/reset/confirm/:uid/:token' element={<ResetPasswordConfirm />} />
             <Route path='/activate/:uid/:token' element={<Activate />} />
           </Routes>
-        </Router>
+        </Router> {/* Use HashRouter */}
       </Provider>
     </div>
   );
