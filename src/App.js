@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <Router> {/* Use HashRouter */}
+        <Router basename="/React-Authentication-Frontend"> {/* Use HashRouter */}
           <Layout />
           <Routes>
             <Route path="/" element={<Home />} />
